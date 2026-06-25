@@ -4,13 +4,12 @@
  */
 package asistencias;
 import Participantes.Participante;
-import Personas.Persona;
 import java.time.LocalDate;
 /**
  *
  * @author UTN
  */
-public class Asistencia extends Persona {
+public class Asistencia {
     private Participante participante;
     private boolean presente;
 
@@ -30,8 +29,7 @@ public class Asistencia extends Persona {
         this.presente = presente;
     }
 
-    public Asistencia(Participante participante, boolean presente, int id, String nombre, LocalDate fecha, String Telefono) {
-        super(id, nombre, fecha, Telefono);
+    public Asistencia(Participante participante, boolean presente) {
         this.participante = participante;
         this.presente = presente;
     }
