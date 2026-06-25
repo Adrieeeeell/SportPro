@@ -12,12 +12,13 @@ import java.time.LocalDate;
  * @author Student
  */
 public class Participante extends Persona {
-private Disciplina Diciplina;
+private Disciplina Disciplina;
     @Override
     public int getId() {
         return id;
     }
 
+@Override
     public String getNombre() {
         return nombre;
     }
@@ -32,12 +33,12 @@ private Disciplina Diciplina;
         return Telefono;
     }
 
-    public Disciplina getDiciplina() {
-        return Diciplina;
+    public Disciplina getDisciplina() {
+        return Disciplina;
     }
 
-    public void setDiciplina(Disciplina Diciplina) {
-        this.Diciplina = Diciplina;
+    public void setDiciplina(Disciplina Disciplina) {
+        this.Disciplina = Disciplina;
     }
     
     

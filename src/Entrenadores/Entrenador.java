@@ -3,7 +3,7 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
  */
 package Entrenadores;
-
+import disciplinas.Disciplina;
 import Personas.Persona;
 import java.time.LocalDate;
 
@@ -13,6 +13,7 @@ import java.time.LocalDate;
  */
 public class Entrenador extends Persona {
     private String Experiencia;
+    private Disciplina Disciplina;
     public Entrenador(int id, String nombre, LocalDate fecha, String Telefono,String experiencia) {
         super(id, nombre, fecha, Telefono);
         Experiencia=experiencia;
@@ -44,6 +45,14 @@ public class Entrenador extends Persona {
     @Override
     public String getTelefono() {
         return Telefono;
+    }
+
+    public Disciplina getDisciplina() {
+        return Disciplina;
+    }
+
+    public void setDisciplina(Disciplina Disciplina) {
+        this.Disciplina = Disciplina;
     }
     
     
