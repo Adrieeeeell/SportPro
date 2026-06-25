@@ -170,20 +170,10 @@ public class Disciplina {
         return true;
     }
 
-    public void mostrarInformacion() {
-        System.out.println("===== Información de la Disciplina =====");
-        System.out.println("Nombre: " + nombre);
-        System.out.println("Categoría: " + categoria);
-        System.out.println("Capacidad máxima: " + 30);
-        System.out.println("Participantes inscritos: " + cantidadParticipantes);
-
-        if (entrenador != null) {
-            System.out.println("Entrenador: " + entrenador.getNombre());
-        } else {
-            System.out.println("Entrenador: No asignado");
-        }
-
-        System.out.println("Cantidad de entrenamientos: " + cantidadEntrenamientos);
-        System.out.println("Horas totales de entrenamiento: " + calcularHorasTotalesEntrenamiento());
+    @Override
+    public String toString() {
+        return "Disciplina{" + "nombre=" + nombre + ", categoria=" + categoria + ", entrenador=" + entrenador + ", participantes=" + participantes + ", cantidadParticipantes=" + cantidadParticipantes + ", entrenamientos=" + entrenamientos + ", cantidadEntrenamientos=" + cantidadEntrenamientos + ", asistencias=" + asistencias + '}';
     }
+
+    
 }
