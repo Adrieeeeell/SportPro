@@ -112,4 +112,11 @@ public class Entrenamiento {
 
         return contador;
     }
+
+    @Override
+    public String toString() {
+        return "Entrenamiento{" + "fecha=" + fecha + ", horaInicio=" + horaInicio + ", duracionMinutos=" + duracionMinutos + ", disciplina=" + disciplina + ", asistencias=" + asistencias + ", cantidadAsistencias=" + cantidadAsistencias + '}';
+    }
+    
 }
+
