@@ -4,7 +4,6 @@
  */
 package asistencias;
 import Participantes.Participante;
-import java.time.LocalDate;
 /**
  *
  * @author UTN
@@ -34,8 +33,14 @@ public class Asistencia {
         this.presente = presente;
     }
 
+    @Override
+    public String toString() {
+        return "Asistencia{" + "participante=" + participante + ", presente=" + presente + '}';
+    }
+    
   
     }
+
     
     
 
