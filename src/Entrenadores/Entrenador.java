@@ -4,10 +4,47 @@
  */
 package Entrenadores;
 
+import Personas.Persona;
+import java.time.LocalDate;
+
 /**
  *
  * @author Student
  */
-public class Entrenador {
+public class Entrenador extends Persona {
+    private String Experiencia;
+    public Entrenador(int id, String nombre, LocalDate fecha, String Telefono,String experiencia) {
+        super(id, nombre, fecha, Telefono);
+        Experiencia=experiencia;
+    }
+
+    public void setExperiencia(String Experiencia) {
+        this.Experiencia = Experiencia;
+    }
+
+    public String getExperiencia() {
+        return Experiencia;
+    }
+
+    @Override
+    public int getId() {
+        return id;
+    }
+
+    @Override
+    public String getNombre() {
+        return nombre;
+    }
+
+    @Override
+    public LocalDate getFecha() {
+        return fecha;
+    }
+
+    @Override
+    public String getTelefono() {
+        return Telefono;
+    }
+    
     
 }
