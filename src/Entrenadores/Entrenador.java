@@ -54,6 +54,9 @@ public class Entrenador extends Persona {
     public void setDisciplina(Disciplina Disciplina) {
         this.Disciplina = Disciplina;
     }
-    
+    @Override
+    public String toString() {
+        return "Participante"+"Cedula"+this.getId()+this.getNombre()+"Edad"+this.getFecha()+"telefono de contacto"+this.getTelefono()+"Disciplina"+this.getDisciplina()+"años de experiencia"+this.getExperiencia();
+    }
     
 }

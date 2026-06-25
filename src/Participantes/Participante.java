@@ -45,5 +45,10 @@ protected Disciplina Disciplina;
     public Participante(int id, String nombre, LocalDate fecha, String Telefono) {
         super(id, nombre, fecha, Telefono);
     }
-    
+
+    @Override
+    public String toString() {
+        return "Participante"+"Cedula"+this.getId()+this.getNombre()+"Edad"+this.getFecha()+"telefono de contacto"+this.getTelefono()+"Disciplina"+this.getDisciplina();
+    }
+  
 }
