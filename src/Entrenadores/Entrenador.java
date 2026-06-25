@@ -58,5 +58,5 @@ public class Entrenador extends Persona {
     public String toString() {
         return "Participante"+"Cedula"+this.getId()+this.getNombre()+"Edad"+this.getFecha()+"telefono de contacto"+this.getTelefono()+"Disciplina"+this.getDisciplina()+"años de experiencia"+this.getExperiencia();
     }
-    
+  
 }
