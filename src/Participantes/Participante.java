@@ -12,7 +12,7 @@ import java.time.LocalDate;
  * @author Student
  */
 public class Participante extends Persona {
-private Disciplina Disciplina;
+protected Disciplina Disciplina;
     @Override
     public int getId() {
         return id;

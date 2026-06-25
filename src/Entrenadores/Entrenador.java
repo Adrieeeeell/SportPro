@@ -13,7 +13,7 @@ import java.time.LocalDate;
  */
 public class Entrenador extends Persona {
     private String Experiencia;
-    private Disciplina Disciplina;
+    protected Disciplina Disciplina;
     public Entrenador(int id, String nombre, LocalDate fecha, String Telefono,String experiencia) {
         super(id, nombre, fecha, Telefono);
         Experiencia=experiencia;
